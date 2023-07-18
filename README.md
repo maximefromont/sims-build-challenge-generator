@@ -13,7 +13,7 @@ And many mores !
 
 ## Project Installation
 
-You can simply download this tool as an executable .jar file in the latest releases.
+You can simply download this tool as an executable .jar file. You can download the latest release [here](https://github.com/maximefromont/sims-challenge-generator/releases).
 
 In order to launch this tool, you will need java 1.8 or a more recent version installed on your computer.
 
@@ -48,11 +48,13 @@ Here are some functionalities that I would like to add in the future:
 - Ability to save the challenge as an image or a text file for example
 - Ability to share the challenge
 
-If you have ideas or if you would like to see new features. Please let me know in the discussion tab of this repository or by oppening issues.
+If you have ideas or if you would like to see new features. Please let me know in the [ideas discussion](https://github.com/maximefromont/sims-challenge-generator/discussions/1) or by [oppening issues](https://github.com/maximefromont/sims-challenge-generator/issues).
+
+Feel free to share you creations or any feedback in the [show off discussion](https://github.com/maximefromont/sims-challenge-generator/discussions/2).
 
 ## Credits
 
-I would like to thank the user cheprasov for his permission to use the file colors.json obtained in [this repository](https://www.github.com/cheprasov/json-colors)
+I would like to thank the user cheprasov for his permission to use the file colors.json obtained in [this repository](https://www.github.com/cheprasov/json-colors).
 
 I would also like to thank Iris for her help with this fun project.
 
