@@ -48,7 +48,7 @@ Here are some functionalities that I would like to add in the future:
 - Ability to save the challenge as an image or a text file for example
 - Ability to share the challenge
 
-If you have ideas or if you would like to see new features. Please let me know in the [ideas discussion](https://github.com/maximefromont/sims-challenge-generator/discussions/1) or by [oppening issues](https://github.com/maximefromont/sims-challenge-generator/issues).
+If you have ideas or if you would like to see new features. Please let me know in the [ideas discussion](https://github.com/maximefromont/sims-challenge-generator/discussions/1) or by [opening issues](https://github.com/maximefromont/sims-challenge-generator/issues).
 
 Feel free to share you creations or any feedback in the [show off discussion](https://github.com/maximefromont/sims-challenge-generator/discussions/2).
 
