@@ -52,7 +52,7 @@ If you have ideas or if you would like to see new features. Please let me know i
 
 ## Credits
 
-I would like to thank the user cheprasov for his permission to use the file colors.json obtained in [this repository](www.github.com/cheprasov/json-colors)
+I would like to thank the user cheprasov for his permission to use the file colors.json obtained in [this repository](https://www.github.com/cheprasov/json-colors)
 
 I would also like to thank Iris for her help with this fun project.
 
