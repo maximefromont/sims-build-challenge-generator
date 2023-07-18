@@ -1,29 +1,46 @@
 # Sims Challenge Generator
 
 ## Project Description
+
 The *Sims Challenge Generator* is a fun desktop tool developed to help sims player to come up with new challenges ideas.
 The software takes multiple parameters and settings into accounts and generate a new challenge randomly. It includes for example :
+
 - A random numbers of sims with randoms ages
 - A random number of rooms and floors in your house
 - A random challenge colour picked in a list of funny colours names
+
 And many mores !
 
 ## Project Installation
+
 You can simply download this tool as an executable .jar file in the latest releases.
+
 In order to launch this tool, you will need java 1.8 or a more recent version installed on your computer.
+
 You can check your java version by typing `java --version` and pressing enter in your operating system command prompt.
 
 ## Project Usage
-Simply open the .jar tool by double clicking on it. If this doesn't work, you can also use the command prompt of your system and type `java -jar <path-of-the-jar-file>`. (Don't forget to include the ".jar" at the end of the file name.
-You can also naviguate to the directory where you saved the .jar tool and type `java -jar simgen.jar`.
+
+Simply open the .jar tool by double clicking on it. If this doesn't work, you can also use the command prompt of your system and type 
+
+`java -jar <path-of-the-jar-file>`. 
+
+(Don't forget to include the ".jar" at the end of the file name.
+
+You can also naviguate to the directory where you saved the .jar tool and type 
+`java -jar simgen.jar`.
+
 For example if you saved it in Documents, enter those prompts :
+
 * `cd Documents`
 * `java -jar simgen.jar`
+
 Assuming the you didn't rename the .jar tool. If so, simply use the name you gave it.
 
 Each time the tool open, you should obtain a random set of parameters for your sims challenge.
 
 ## Future Improvements
+
 Here are some functionalities that I would like to add in the future:
 
 - Settings adjustment before generating
@@ -35,11 +52,15 @@ Here are some functionalities that I would like to add in the future:
 If you have ideas or if you would like to see new features. Please let me know in the discussion tab of this repository or by oppening issues.
 
 ## Credits
-I would like to thank the user cheprasov for his permission to use the file colors.json obtained in this repository : *www.github.com/cheprasov/json-colors*
+
+I would like to thank the user cheprasov for his permission to use the file colors.json obtained in [this repository](www.github.com/cheprasov/json-colors)
+
 I would also like to thank Iris for her help with this fun project.
 
 ## License
+
 This project is licensed under the GNU General Public License v3.0.
 
 ## Contact Information
+
 If you have any questions, you can reach me via email at `maxime.fromont0@gmail.com`.
