@@ -35,7 +35,7 @@ For example if you saved it in Documents, enter those prompts :
 * `cd Documents`
 * `java -jar simgen.jar`
 
-Assuming the you didn't rename the .jar tool. If so, simply use the name you gave it.
+Assuming that you didn't rename the .jar tool. If so, simply use the name you gave it.
 
 Each time the tool open, you should obtain a random set of parameters for your sims challenge.
 
@@ -47,7 +47,6 @@ Here are some functionalities that I would like to add in the future:
 - Ability to re-generate without closing and reopening the tool
 - Ability to save the challenge as an image or a text file for example
 - Ability to share the challenge
-- Password recovery via email
 
 If you have ideas or if you would like to see new features. Please let me know in the discussion tab of this repository or by oppening issues.
 
