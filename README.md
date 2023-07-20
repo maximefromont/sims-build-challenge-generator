@@ -1,8 +1,8 @@
-# Sims Challenge Generator
+# Sims Build Challenge Generator
 
 ## Project Description
 
-The *Sims Challenge Generator* is a fun desktop tool developed to help sims player to come up with new challenges ideas.
+The *Sims Build Challenge Generator* is a fun desktop tool developed to help sims player to come up with new challenges ideas.
 The software takes multiple parameters and settings into accounts and generate a new challenge randomly. It includes for example :
 
 - A random numbers of sims with randoms ages
