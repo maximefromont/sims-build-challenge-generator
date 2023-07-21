@@ -1,3 +1,5 @@
+package models;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,7 +18,7 @@ public class House
   private static int _global_house_id;
 
   //PUBLIC INTERFACE
-  House()
+  public House()
   {
     this._house_id         = _global_house_id++;
     this._house_size_type  = (int) Math.floor(Math.random() * this.HOUSE_SIZE_TYPES.size()) + 1;

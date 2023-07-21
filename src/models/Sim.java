@@ -1,3 +1,5 @@
+package models;
+
 import java.util.*;
 
 public class Sim
@@ -31,6 +33,36 @@ public class Sim
   public int getSimId()
   {
     return this._sim_id;
+  }
+
+  //PUBLIC STATIC INTERFACE
+  public static ArrayList<Sim> getSimList()
+  {
+    ArrayList<Sim> sims_list    = new ArrayList<>();
+    int            maximum_sims = GeneratorSettings.getRandomBetweenConstants(GeneratorSettings.SIMS_MINIMUM, GeneratorSettings.SIMS_MAXIMUM);
+
+    for (int i = 0; i < (maximum_sims - 1); i++)
+      sims_list.add(new Sim());
+
+    sims_list.add(new Sim(1)); //At least one adult sim
+
+    return sims_list;
+  }
+
+  public static String getSimListDescriptionAsString(ArrayList<Sim> sims_list)
+  {
+    String list_of_sims_string = "";
+
+    for(int i=0; i<sims_list.size(); i++)
+    {
+      list_of_sims_string = list_of_sims_string + "One " + sims_list.get(i).getAgeTypeToString();
+      if(i<sims_list.size()-1)
+        list_of_sims_string = list_of_sims_string + ", ";
+      else
+        list_of_sims_string = list_of_sims_string + ".";
+    }
+
+    return list_of_sims_string;
   }
 
   //PUBLIC CONSTANTS
