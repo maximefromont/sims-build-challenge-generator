@@ -7,7 +7,7 @@ The software takes multiple parameters and settings into accounts and generate a
 
 - A random numbers of sims with randoms ages
 - A random number of rooms and floors in your house
-- A random challenge colour picked in a list of funny colours names
+- A random challenge challengeColour picked in a list of funny colours names
 
 And many mores !
 

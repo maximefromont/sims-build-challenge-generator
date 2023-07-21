@@ -49,6 +49,22 @@ public class Sim
     return sims_list;
   }
 
+  public static String getSimListDescriptionAsString(ArrayList<Sim> sims_list)
+  {
+    String list_of_sims_string = "";
+
+    for(int i=0; i<sims_list.size(); i++)
+    {
+      list_of_sims_string = list_of_sims_string + "One " + sims_list.get(i).getAgeTypeToString();
+      if(i<sims_list.size()-1)
+        list_of_sims_string = list_of_sims_string + ", ";
+      else
+        list_of_sims_string = list_of_sims_string + ".";
+    }
+
+    return list_of_sims_string;
+  }
+
   //PUBLIC CONSTANTS
   public static final int AGE_TYPE_ADULT    = 1;
   public static final int AGE_TYPE_TEENAGER = 2;

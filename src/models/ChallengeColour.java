@@ -10,15 +10,15 @@ import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 import java.util.Random;
 
-public class Colour
+public class ChallengeColour
 {
   //PRIVATE INTERFACE
   private String _color_name;
   private String _color_hex;
 
   //PUBLIC INTERFACE
-  public Colour(String color_name,
-                String color_hex)
+  public ChallengeColour(String color_name,
+                         String color_hex)
   {
     this._color_name = color_name;
     this._color_hex  = color_hex;
@@ -31,10 +31,10 @@ public class Colour
   public String get_color_hex() { return _color_hex; }
 
   //PUBLIC STATIC INTERFACE
-  public static Colour pickAColourFromJson()
+  public static ChallengeColour pickAColourFromJson()
   throws IOException, URISyntaxException
   {
-    try (InputStream in = Colour.class.getResourceAsStream("ressources/colors.json");
+    try (InputStream in = ChallengeColour.class.getResourceAsStream("ressources/colors.json");
          BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
 
       StringBuilder sb = new StringBuilder();
@@ -51,9 +51,9 @@ public class Colour
 
       JSONObject colorObject = jsonArray.getJSONObject(randomIndex);
 
-      Colour colour = new Colour(colorObject.getString("name"), colorObject.getString("hex"));
+      ChallengeColour challengeColour = new ChallengeColour(colorObject.getString("name"), colorObject.getString("hex"));
 
-      return colour;
+      return challengeColour;
 
     }
   }
