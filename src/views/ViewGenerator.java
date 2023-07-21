@@ -7,9 +7,11 @@ import models.Sim;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class ViewGenerator
+public abstract class ViewGenerator
 {
 
   //PROTECTED INTERFACE
@@ -17,6 +19,8 @@ public class ViewGenerator
   {
    initComponents();
   }
+
+  protected abstract void handleRegenerateButton();
 
   //PRIVATE INTERFACE
   private void initComponents()
@@ -76,11 +80,28 @@ public class ViewGenerator
 
     _main_panel.add(_separator_textarea, _gbc);
 
-    _goodluck_textarea = createStyledTextArea("Good luck with your challenge :D !",14f, Color.WHITE, new Color(40, 167, 69));
+    _goodluck_textarea = createStyledTextArea("Good luck :D !",14f, Color.BLACK, Color.WHITE);
     _goodluck_textarea.setLineWrap(false); // Disable line wrap
     _goodluck_textarea.setWrapStyleWord(false); // Disable word wrap
     _goodluck_textarea.setAlignmentX(SwingConstants.LEFT);
     _main_panel.add(_goodluck_textarea, _gbc);
+
+    _main_panel.add(_separator_textarea, _gbc);
+
+    _regenerate_button = new JButton("Generate a new challenge");
+    _regenerate_button.setFont(_regenerate_button.getFont().deriveFont(14f));
+    _regenerate_button.setForeground(Color.WHITE);
+    _regenerate_button.setBackground(new Color(40, 167, 69));
+    _regenerate_button.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+    _regenerate_button.addActionListener(new ActionListener()
+    {
+      @Override
+      public void actionPerformed(ActionEvent e)
+      {
+        handleRegenerateButton();
+      }
+    });
+    _main_panel.add(_regenerate_button, _gbc);
 
     _main_panel.setPreferredSize(new Dimension(1280, 720));
 
@@ -116,6 +137,8 @@ public class ViewGenerator
   protected JPanel _colour_square_panel;
 
   protected JTextArea _goodluck_textarea;
+
+  protected JButton _regenerate_button;
 
   //PRIVATE STATIC ATTRIBUTES
   private static GridBagConstraints _gbc;
