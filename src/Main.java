@@ -1,24 +1,20 @@
+import models.Colour;
+import models.GeneratorSettings;
+import models.House;
+import models.Sim;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
 
 public class Main
 {
   public static void main(String[] args)
   throws InterruptedException
   {
-    ArrayList<Sim> sims_list    = new ArrayList<>();
-    int            maximum_sims = GeneratorSettings.getRandomBetweenConstants(GeneratorSettings.SIMS_MINIMUM, GeneratorSettings.SIMS_MAXIMUM);
-    for (int i = 0; i < (maximum_sims - 1); i++)
-    {
-      sims_list.add(new Sim());
-    }
-    sims_list.add(new Sim(1));
+    ArrayList<Sim> sims_list = Sim.getSimList();
 
     House house = new House();
 

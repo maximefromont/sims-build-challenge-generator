@@ -1,3 +1,5 @@
+package models;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -6,8 +8,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Random;
 
 public class Colour
@@ -34,8 +34,7 @@ public class Colour
   public static Colour pickAColourFromJson()
   throws IOException, URISyntaxException
   {
-    String      path  = "/src/ressources/colors.json";
-    try (InputStream in = Main.class.getResourceAsStream("ressources/colors.json");
+    try (InputStream in = Colour.class.getResourceAsStream("ressources/colors.json");
          BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
 
       StringBuilder sb = new StringBuilder();
